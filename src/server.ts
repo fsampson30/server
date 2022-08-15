@@ -5,8 +5,8 @@ const app = express();
 app.use(express.json());
 
 app.get('/', (request, response) => {
-    console.log(request.query)
-
+    console.log(request.body)
+ 
     const users = [
         {name: 'Flavio', age: 39},
         {name: 'Juliana', age: 41},
